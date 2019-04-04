@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WELCOME TO TUTOR DICCHI NICCHI</title>
+</head>
+<body>
+	<form method="post" onsubmit="return validation()">
+		<fieldset>
+			<legend>Registration as TUTOR</legend>
+			<table>
+				<tr>
+					<td>Username</td>
+					<td><input type="text" name="uname" pattern="A-Za-Z{"Invalid Username"}" required="Invalid Username Input!"></td>
+					<span id="usern" class="text-danger "></span>
+
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="password" name="password" pattern="A-Za-Z{"Invalid Username"}" required="Invalid Password Input"></td>
+					<span id="passw" class="text-danger "></span>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" name="submit" value="Submit"></td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+
+<!-- 	<script type="text/javascript">
+
+		function usercheck()
+		{
+			var user= document.getElementById('username').value;
+			var pass= document.getElementById('pass').value;
+			if(user == "")
+			{
+				document.getElementById('usern').innerHTML="***Please fill the username field";
+				//alert("Please fill the password field");
+			}
+			if(pass == "")
+			{
+				document.getElementById('passw').innerHTML="***Please fill the password field";
+				//alert("Please fill the password field");
+				
+			}
+
+
+		}
+
+	</script>
+
+ -->
+
+	</body>
+</html>

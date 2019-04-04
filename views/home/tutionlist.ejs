@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tution List</title>
+</head>
+<body>
+	<h1>Tution List</h1>
+
+	<a href="/home">Back</a> |
+	<a href="/logout">logout</a> 
+	<br>
+	<br>
+
+	<table border="1" width="400px" >
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Place</th>
+			<th>Class</th>
+			<!-- <th>Mytution</th> -->
+		</tr>
+
+		<% for(var i=0; i < tList.length; i++){ %>
+		<tr>
+			<td><%= tList[i].id %></td>
+			<td><%= tList[i].name %></td>
+			<td><%= tList[i].place %></td>
+			<td><%= tList[i].class %></td>
+			<!-- <td><%= tList[i].mytution %></td> -->
+			<td>
+				<!-- <a href="/home/edit/<%= tList[i].id %>">Select</a> | -->
+				<!-- 
+
+				 --> 
+			</td>
+		</tr>
+		<% } %>
+	</table>
+</body>
+</html>
